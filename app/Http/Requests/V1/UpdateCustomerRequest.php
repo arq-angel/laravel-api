@@ -34,7 +34,7 @@ class UpdateCustomerRequest extends FormRequest
                 'address' => ['required'],
                 'city' => ['required'],
                 'state' => ['required'],
-                'postalCode' => ['required'],
+                'postal_code' => ['required'],
             ];
         } else {
             return [
@@ -44,7 +44,7 @@ class UpdateCustomerRequest extends FormRequest
                 'address' => ['sometimes', 'required'],
                 'city' => ['sometimes', 'required'],
                 'state' => ['sometimes', 'required'],
-                'postalCode' => ['sometimes', 'required'],
+                'postal_code' => ['sometimes', 'required'],
             ];
         }
     }
